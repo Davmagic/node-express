@@ -5,6 +5,10 @@ _Proyecto para poner en práctica el uso de node, express y mongoDB_
 
 ## Comenzando 🚀
 
-_Para que se entienda lo que hace el proyecto puedes visitar la página que he creado para este ejercicio._
+_Hacemos uso de **Node** para crear el servidor que despliega la aplicación._
 
-Mira la **DEMO** en: https://davmagic.github.io/dark-express/
+_La estructura seguida para este propyecto es la **MVC - Model, View, Controller** y para manjar todo esto se usa el Framework **Express** que nos facilita las cosas._
+
+_Finalmente se hace uso de **MongoDB** como base de datos para almacenar los datos y poder realizar el CRUD._
+
+
