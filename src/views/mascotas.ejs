@@ -1,0 +1,66 @@
+<%- include('template/head', {tituloweb:"Admin Mascotas"})%>
+
+    <div class="container pt-4">
+        <h1>
+            <%= titulo%>
+        </h1>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/mascotas/add" method="POST">
+                            <div class="form-floating mb-3">
+                                <input type="text" name="nombre"
+                                class="form-control" id="floatingInput"
+                                placeholder="Nombre de tu Mascota">
+                                <label for="floatingInput">Nombre de tu Mascota</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" name="edad"
+                                class="form-control" id="floatingInput"
+                                placeholder="Edad de tu Mascota">
+                                <label for="floatingInput">Edad de tu Mascota</label>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button type="submit" class=" btn btn-warning col-6 mx-auto">
+                                    Añadir
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (arrayPets.length> 0) { %>
+                            <% arrayPets.forEach(mascota=> { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%= mascota.id %>
+                                    </th>
+                                    <td>
+                                        <%= mascota.nombre %>
+                                    </td>
+                                    <td>
+                                        <%= mascota.edad %>
+                                    </td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <% }) %>
+                                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+<%- include('template/footer')%>
