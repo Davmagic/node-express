@@ -3,7 +3,7 @@ Tienda de mascotas usando node-express-mongoDB
 
 _Proyecto para poner en práctica el uso de node, express y mongoDB_
 
-## Comenzando 🚀
+## Detalles 📋
 
 _Hacemos uso de **Node** para crear el servidor que despliega la aplicación._
 
